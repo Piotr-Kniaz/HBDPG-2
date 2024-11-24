@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'none'; object-src 'none'; media-src 'none'; child-src 'none'; form-action 'none'; base-uri 'self'; worker-src 'self'; manifest-src 'self'; upgrade-insecure-requests;">
+
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000000">
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        <link rel="stylesheet" href="styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="width">
+
+        <title>HBDPG-2: Deterministic password generator</title>
+        <meta name="description" content="Generate your passwords anywhere, securely, and without storing them!">
+        <link rel="canonical" href="https://piotr-kniaz.github.io/HBDPG-2/">
+
+        <link rel="manifest" href="manifest.webmanifest">
+
+        <!-- Icons for Apple devices -->
+        <link rel="apple-touch-icon" sizes="1024x1024" href="images/icons/apple-touch-icon-1024.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="images/icons/apple-touch-icon-512.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="images/icons/apple-touch-icon-192.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="images/icons/apple-touch-icon-128.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72.png">
+        <link rel="icon" type="image/png" href="images/icons/icon-128.png">
+        <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon-128.ico">
+
+        <!-- Splash screens for Apple devices -->
+        <!-- iPhone 16 Pro Max -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1320x2868.png" media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 16 Plus, 15 Pro Max, 15 Plus, 14 Pro Max -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1290x2796.png" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 14 Plus, 13 Pro Max, 12 Pro Max -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1284x2778.png" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 11 Pro Max, XS Max -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1284x2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 16 Pro -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1206x2622.png" media="(device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 16, 15, 15 Pro, 14 Pro -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1179x2556.png" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 14, 13, 13 Pro, 12, 12 Pro -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 11 Pro, XS, X -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 13 mini, 12 mini -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1080x2340.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 8 Plus, 7 Plus, 6S Plus, 6 Plus -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-1080x1920.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <!-- iPhone 11, XR -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-828x1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <!-- iPhone SE (3rd, 2nd gen), 8, 7, 6S, 6 -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-750x1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <!-- iPhone SE (1st gen), 5C, 5S, 5 -->
+        <link rel="apple-touch-startup-image" href="images/splash-screens/iphone-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+
+        <meta name="google-site-verification" content="x8LGsAJZb18AYa6tRbamGM3N22FhXNkDHhUxt2m5TvU">
+        <meta name="msvalidate.01" content="9E7FB030C34A1052637B51FD48F10D71">
+    </head>
+
+    <body>
+        <header>
+            <img id="Logo" src="images/Logo-beta.webp" alt="Logo">
+        </header>
+
+        <main>
+            <div class="blocks">
+                <strong class="blockTitles">Warning!</strong><br>
+
+                <span>HBDPG-2 has been transferred to a new domain. Please reinstall the app using the new link.</span><br>
+
+                <button id="linkButton" class="buttons mainButtons">New link</button>
+            </div>
+        </main>
+    </body>
+
+    <script src="scripts/ui.js"></script>
+</html>
