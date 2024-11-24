@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     linkButton.addEventListener('click', function() {
-        window.location.href = 'https://hbdpg-2.github.io/';
+        window.open('https://hbdpg-2.github.io/', '_blank');
     });
 });
 
