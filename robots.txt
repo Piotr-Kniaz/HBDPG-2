@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://hbdpg-2.github.io/sitemap.xml
